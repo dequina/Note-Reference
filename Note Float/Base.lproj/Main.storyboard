@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Note_Float" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Tex-kT-4N6">
+                                <rect key="frame" x="64.5" y="510" width="285" height="277"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ry-NX-RGG">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="69"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <state key="normal" title="Short Scales" backgroundImage="button">
+                                            <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Itg-lB-Etm" kind="presentation" id="TvS-KQ-aaR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9r-DM-cJU">
+                                        <rect key="frame" x="0.0" y="104" width="285" height="69"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <state key="normal" title="Starting Notes" backgroundImage="button">
+                                            <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="kx5-Ze-qR6" kind="presentation" id="cFI-Mt-kuw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVa-ex-CeN">
+                                        <rect key="frame" x="0.0" y="208" width="285" height="69"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <state key="normal" title="Intervals" backgroundImage="button">
+                                            <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ez4-Dc-bsQ" kind="presentation" id="cpL-WU-g3E"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Float" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hol-Zp-k4S">
+                                <rect key="frame" x="120.5" y="164.5" width="173.5" height="41"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
+                                <color key="textColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a small music reference tool :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zn-gc-831">
+                                <rect key="frame" x="83.5" y="410" width="247" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="pic.png" translatesAutoresizingMaskIntoConstraints="NO" id="5gD-ih-ZGU">
+                                <rect key="frame" x="124.5" y="215.5" width="165" height="164.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Zn-gc-831" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZN-5R-gvA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tex-kT-4N6" secondAttribute="bottom" constant="75" id="83v-b1-o8p"/>
+                            <constraint firstItem="hol-Zp-k4S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Am5-IF-IQX"/>
+                            <constraint firstItem="Tex-kT-4N6" firstAttribute="top" secondItem="3Zn-gc-831" secondAttribute="bottom" constant="80" id="HdU-ht-0Dt"/>
+                            <constraint firstItem="3Zn-gc-831" firstAttribute="top" secondItem="5gD-ih-ZGU" secondAttribute="bottom" constant="30" id="QpB-3s-M4g"/>
+                            <constraint firstItem="hol-Zp-k4S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120.5" id="aHy-Di-Zua"/>
+                            <constraint firstItem="Tex-kT-4N6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ekU-OD-sBd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Zn-gc-831" secondAttribute="bottom" constant="432" id="gTp-Zw-SDM"/>
+                            <constraint firstItem="hol-Zp-k4S" firstAttribute="centerX" secondItem="5gD-ih-ZGU" secondAttribute="centerX" id="vFn-M2-Yr4"/>
+                            <constraint firstItem="5gD-ih-ZGU" firstAttribute="top" secondItem="hol-Zp-k4S" secondAttribute="bottom" constant="10" id="vye-rc-Wgi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666.66666666666674" y="20.758928571428569"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="OrX-OR-5Yz">
+            <objects>
+                <viewController id="kx5-Ze-qR6" customClass="ViewController3" customModule="Note_Float" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KQh-ii-RNt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zzJ-9w-YEP">
+                                <rect key="frame" x="42" y="223" width="64" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX1-if-zKa">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="C" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="do3-Tu-U9N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHb-iQ-NtS">
+                                        <rect key="frame" x="0.0" y="64" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                        <state key="normal" title="D#/Eb" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="Rdz-vd-Ifc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35y-M8-83P">
+                                        <rect key="frame" x="0.0" y="128" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                        <state key="normal" title="F#/Gb" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="goR-JF-G6P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN8-oj-v1X">
+                                        <rect key="frame" x="0.0" y="192" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="A" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="PtI-gd-6MD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="H5q-il-X9o">
+                                <rect key="frame" x="308" y="223" width="64" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-9W-vgF">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="D" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="LSG-m2-r0L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttD-ad-VtL">
+                                        <rect key="frame" x="0.0" y="64" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="F" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="bxB-a1-KsV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTc-ib-PCB">
+                                        <rect key="frame" x="0.0" y="128" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="G#/Ab" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="K7e-0y-x4b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G5-yS-TC2">
+                                        <rect key="frame" x="0.0" y="192" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="B" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="iMk-L2-a0q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Fit-5A-xR7">
+                                <rect key="frame" x="175" y="223" width="64" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJD-bh-137">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="C#/Db" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="MvX-8Q-Luu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xya-4q-plh">
+                                        <rect key="frame" x="0.0" y="64" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="E" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="ROM-2V-Vqe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIg-hZ-x5r">
+                                        <rect key="frame" x="0.0" y="128" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="G" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="TR6-C0-t5o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeU-at-ySK">
+                                        <rect key="frame" x="0.0" y="192" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="A#/Bb" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="kx5-Ze-qR6" eventType="touchDown" id="Zgb-K9-OfK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCS-yL-9c6">
+                                <rect key="frame" x="0.0" y="79" width="414" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Starting Notes" id="9w7-x5-7Ll">
+                                        <barButtonItem key="leftBarButtonItem" style="done" id="6HM-IG-HCe">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sDY-5v-Nlz">
+                                                <rect key="frame" x="20" y="7" width="34" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" id="TJc-gN-4HQ"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fit-5A-xR7" firstAttribute="top" secondItem="cCS-yL-9c6" secondAttribute="bottom" constant="100" id="2qq-XL-1Ei"/>
+                            <constraint firstItem="cCS-yL-9c6" firstAttribute="leading" secondItem="KQh-ii-RNt" secondAttribute="leading" id="9Nr-oG-GZT"/>
+                            <constraint firstItem="H5q-il-X9o" firstAttribute="leading" secondItem="Fit-5A-xR7" secondAttribute="trailing" constant="69" id="aPh-06-Dsz"/>
+                            <constraint firstItem="Fit-5A-xR7" firstAttribute="centerX" secondItem="KQh-ii-RNt" secondAttribute="centerX" id="h4B-cX-qYl"/>
+                            <constraint firstItem="cCS-yL-9c6" firstAttribute="centerX" secondItem="KQh-ii-RNt" secondAttribute="centerX" id="hbQ-8V-fSX"/>
+                            <constraint firstItem="Fit-5A-xR7" firstAttribute="leading" secondItem="zzJ-9w-YEP" secondAttribute="trailing" constant="69" id="iXD-c8-10Z"/>
+                            <constraint firstItem="cCS-yL-9c6" firstAttribute="top" secondItem="hEk-ga-AzL" secondAttribute="top" constant="35" id="jVC-ry-Xae"/>
+                            <constraint firstItem="zzJ-9w-YEP" firstAttribute="top" secondItem="cCS-yL-9c6" secondAttribute="bottom" constant="100" id="o35-Fa-yce"/>
+                            <constraint firstItem="H5q-il-X9o" firstAttribute="top" secondItem="cCS-yL-9c6" secondAttribute="bottom" constant="100" id="zfH-7N-tP6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hEk-ga-AzL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0c-Nd-NhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="777"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="f7y-5j-TkE">
+            <objects>
+                <viewController id="ez4-Dc-bsQ" customClass="ViewController4" customModule="Note_Float" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ywZ-qa-JJj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdX-WZ-Z2Y">
+                                <rect key="frame" x="47" y="192" width="320" height="216"/>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YTz-W7-deN">
+                                <rect key="frame" x="119.5" y="650" width="175" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKE-ht-uif">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="32"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playWith_sender:" destination="ez4-Dc-bsQ" eventType="touchUpInside" id="ANJ-jk-c9M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAO-HI-4NO">
+                                        <rect key="frame" x="136" y="0.0" width="39" height="32"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopWith_sender:" destination="ez4-Dc-bsQ" eventType="touchUpInside" id="DKA-FB-Hcf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pm8-UO-o0e">
+                                <rect key="frame" x="87" y="453" width="240" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pm8-UO-o0e" secondAttribute="height" multiplier="30:19" id="tfA-9c-lIt"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLM-Wb-v8r">
+                                <rect key="frame" x="0.0" y="79" width="414" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Intervals" id="FrJ-H7-s5Z">
+                                        <barButtonItem key="leftBarButtonItem" style="done" id="qpj-93-RxW">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xBT-uz-h76">
+                                                <rect key="frame" x="20" y="7" width="34" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ceaseWith_sender:" destination="ez4-Dc-bsQ" eventType="touchDown" id="JFQ-ai-eIp"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" id="7VF-9V-dnh"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pm8-UO-o0e" firstAttribute="centerX" secondItem="ywZ-qa-JJj" secondAttribute="centerX" id="6VY-X0-pSV"/>
+                            <constraint firstItem="YTz-W7-deN" firstAttribute="centerX" secondItem="ywZ-qa-JJj" secondAttribute="centerX" id="7Xy-oy-7sU"/>
+                            <constraint firstItem="YdX-WZ-Z2Y" firstAttribute="centerX" secondItem="ywZ-qa-JJj" secondAttribute="centerX" id="8ct-6c-sMb"/>
+                            <constraint firstItem="BLM-Wb-v8r" firstAttribute="top" secondItem="rAj-YJ-hzj" secondAttribute="top" constant="35" id="E6a-Pb-kWf"/>
+                            <constraint firstItem="BLM-Wb-v8r" firstAttribute="centerX" secondItem="ywZ-qa-JJj" secondAttribute="centerX" id="EnE-AE-WBm"/>
+                            <constraint firstItem="YdX-WZ-Z2Y" firstAttribute="top" secondItem="BLM-Wb-v8r" secondAttribute="bottom" constant="69" id="FNN-xp-w5H"/>
+                            <constraint firstItem="BLM-Wb-v8r" firstAttribute="leading" secondItem="ywZ-qa-JJj" secondAttribute="leading" id="HUB-WD-9HA"/>
+                            <constraint firstItem="pm8-UO-o0e" firstAttribute="top" secondItem="YdX-WZ-Z2Y" secondAttribute="bottom" constant="45" id="PeU-pE-TTL"/>
+                            <constraint firstItem="rAj-YJ-hzj" firstAttribute="bottom" secondItem="pm8-UO-o0e" secondAttribute="bottom" constant="257" id="SXd-Ts-nBd"/>
+                            <constraint firstItem="pm8-UO-o0e" firstAttribute="leading" secondItem="rAj-YJ-hzj" secondAttribute="leading" constant="87" id="YN9-1b-aGD"/>
+                            <constraint firstItem="YTz-W7-deN" firstAttribute="top" secondItem="pm8-UO-o0e" secondAttribute="bottom" constant="45" id="vue-L4-sCV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rAj-YJ-hzj"/>
+                    </view>
+                    <connections>
+                        <outlet property="booton" destination="PKE-ht-uif" id="iPS-8S-SaV"/>
+                        <outlet property="img" destination="pm8-UO-o0e" id="vjh-bt-FZv"/>
+                        <outlet property="picker" destination="YdX-WZ-Z2Y" id="jMr-Ef-Gga"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KME-WS-O25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.8550724637682" y="776.78571428571422"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="Y9x-qM-rfM">
+            <objects>
+                <viewController id="Itg-lB-Etm" customClass="ViewController2" customModule="Note_Float" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJ6-mx-47z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eca-l7-MMh">
+                                <rect key="frame" x="0.0" y="79" width="414" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Short Scales" id="XUE-f6-gYs">
+                                        <barButtonItem key="leftBarButtonItem" style="done" id="zYJ-at-t97">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8dY-g9-9bW">
+                                                <rect key="frame" x="20" y="7" width="34" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ceaseWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="4Ks-ev-jBt"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" id="sUE-cn-JDm"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2E-Cj-ddz">
+                                <rect key="frame" x="176.5" y="173" width="61" height="32"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Play All">
+                                    <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="Kxk-1Q-lJN"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="reI-j1-H3m">
+                                <rect key="frame" x="42" y="243" width="64" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry5-Vs-622">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="C" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="toc-hQ-lgH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kv-7w-WDS">
+                                        <rect key="frame" x="0.0" y="64" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                        <state key="normal" title="D#/Eb" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="a9G-yV-IGm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdV-ou-9d1">
+                                        <rect key="frame" x="0.0" y="128" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                        <state key="normal" title="F#/Gb" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="EqR-ba-cEU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lo-lZ-iWv">
+                                        <rect key="frame" x="0.0" y="192" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="A" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="indexChangedWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="3Ux-c2-uYo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="x8g-oO-bjm">
+                                <rect key="frame" x="308" y="243" width="64" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDY-vn-jgB">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="D" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="qXP-Hc-cu5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHG-i0-OvD">
+                                        <rect key="frame" x="0.0" y="64" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="F" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="ws5-Xf-yri"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-dc-56r">
+                                        <rect key="frame" x="0.0" y="128" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                        <state key="normal" title="G#/Ab" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="TKR-fF-y64"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EE-vO-pc9">
+                                        <rect key="frame" x="0.0" y="192" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="B" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829999998" green="0.13351405929999999" blue="0.089656946200000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="nHM-jb-WAT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2gs-5r-oiR">
+                                <rect key="frame" x="175" y="243" width="64" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNI-Td-vNU">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                        <state key="normal" title="C#/Db" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829015541" green="0.13351405926404122" blue="0.089656946204294916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="5kh-8W-bYv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zro-HV-caO">
+                                        <rect key="frame" x="0.0" y="64" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="E" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829015541" green="0.13351405926404122" blue="0.089656946204294916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="01Y-m1-SLQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGc-To-cl2">
+                                        <rect key="frame" x="0.0" y="128" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="G" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829015541" green="0.13351405926404122" blue="0.089656946204294916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="7Ua-89-cw5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcl-LE-wOk">
+                                        <rect key="frame" x="0.0" y="192" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                        <state key="normal" title="A#/Bb" backgroundImage="note-button">
+                                            <color key="titleColor" red="0.45545255829015541" green="0.13351405926404122" blue="0.089656946204294916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="L9u-VC-pqe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-DP-Xdh">
+                                <rect key="frame" x="187.5" y="514" width="39" height="32"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="BrD-IN-NLO"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1jo-G0-c5S">
+                                <rect key="frame" x="157.5" y="576" width="99" height="29"/>
+                                <segments>
+                                    <segment title="Major"/>
+                                    <segment title="Minor"/>
+                                </segments>
+                                <color key="tintColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="majorMinorWith_sender:" destination="Itg-lB-Etm" eventType="valueChanged" id="Mhl-ZK-zH7"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g6U-FG-F8F">
+                                <rect key="frame" x="77" y="133" width="260" height="29"/>
+                                <segments>
+                                    <segment title="Ascending"/>
+                                    <segment title="Descending"/>
+                                    <segment title="Both"/>
+                                </segments>
+                                <color key="tintColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="scaleDirectionWith_sender:" destination="Itg-lB-Etm" eventType="valueChanged" id="izC-ZC-fcR"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x8g-oO-bjm" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="120" id="3fi-Kv-AdZ"/>
+                            <constraint firstItem="g6U-FG-F8F" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="10" id="CXP-PH-l3F"/>
+                            <constraint firstItem="xW3-DP-Xdh" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="DaR-1O-6FC"/>
+                            <constraint firstItem="g6U-FG-F8F" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="Ffu-OO-sqY"/>
+                            <constraint firstItem="1jo-G0-c5S" firstAttribute="top" secondItem="xW3-DP-Xdh" secondAttribute="bottom" constant="30" id="ISI-1i-5yi"/>
+                            <constraint firstItem="2gs-5r-oiR" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="Jn3-ui-8Us"/>
+                            <constraint firstItem="eca-l7-MMh" firstAttribute="top" secondItem="eC9-6v-bHo" secondAttribute="top" constant="35" id="OV5-6D-PK5"/>
+                            <constraint firstItem="y2E-Cj-ddz" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="PwD-CY-FBA"/>
+                            <constraint firstItem="xW3-DP-Xdh" firstAttribute="top" secondItem="2gs-5r-oiR" secondAttribute="bottom" constant="45" id="c5B-xv-iwc"/>
+                            <constraint firstItem="2gs-5r-oiR" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="120" id="eHG-ov-QEm"/>
+                            <constraint firstItem="x8g-oO-bjm" firstAttribute="leading" secondItem="2gs-5r-oiR" secondAttribute="trailing" constant="69" id="gYA-1g-oqV"/>
+                            <constraint firstItem="eca-l7-MMh" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="ion-nN-iT6"/>
+                            <constraint firstItem="eca-l7-MMh" firstAttribute="leading" secondItem="fJ6-mx-47z" secondAttribute="leading" id="jvG-ZF-bZM"/>
+                            <constraint firstItem="1jo-G0-c5S" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="oj1-zl-0wt"/>
+                            <constraint firstItem="2gs-5r-oiR" firstAttribute="leading" secondItem="reI-j1-H3m" secondAttribute="trailing" constant="69" id="pwW-iY-fsl"/>
+                            <constraint firstItem="y2E-Cj-ddz" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="50" id="s41-Jk-MyI"/>
+                            <constraint firstItem="reI-j1-H3m" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="120" id="wjA-Co-zqH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eC9-6v-bHo"/>
+                    </view>
+                    <connections>
+                        <outlet property="direction" destination="g6U-FG-F8F" id="OXi-7x-6qY"/>
+                        <outlet property="majmin" destination="1jo-G0-c5S" id="R6f-L1-qzf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uor-eu-Tw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.8550724637682" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button" width="285" height="69"/>
+        <image name="note-button" width="64" height="34"/>
+        <image name="pic.png" width="164.57142639160156" height="164.57142639160156"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sUE-cn-JDm"/>
+    </inferredMetricsTieBreakers>
+</document>
