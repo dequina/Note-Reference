@@ -10,7 +10,6 @@
 		3D4586AC232446E800555DD4 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4586AB232446E800555DD4 /* ViewController2.swift */; };
 		3D4586AE232446F500555DD4 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4586AD232446F500555DD4 /* ViewController3.swift */; };
 		3D4586B02324470000555DD4 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4586AF2324470000555DD4 /* ViewController4.swift */; };
-		3D4586B22324479400555DD4 /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D4586B12324479400555DD4 /* pic.png */; };
 		3D4587142324545F00555DD4 /* B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D4587132324545F00555DD4 /* B.mp3 */; };
 		3D4587162324546400555DD4 /* C.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D4587152324546400555DD4 /* C.mp3 */; };
 		3D4587182324546800555DD4 /* C#:Db.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D4587172324546800555DD4 /* C#:Db.mp3 */; };
@@ -79,13 +78,14 @@
 		3D45877F2324614D00555DD4 /* G#:Ab maj.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D45870B2324541A00555DD4 /* G#:Ab maj.mp3 */; };
 		3D4587812325B4BF00555DD4 /* none.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D4587802325B4BF00555DD4 /* none.png */; };
 		3D4587832325C05300555DD4 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D4587822325C05300555DD4 /* icon1.png */; };
+		3D48366B2734CDDD00EAA2F4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D48366A2734CDDD00EAA2F4 /* icon.png */; };
+		3D48366D2734CDE700EAA2F4 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D48366C2734CDE700EAA2F4 /* button.png */; };
 		3D5E6FCB2649ECF400D473AE /* A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D5E6FCA2649ECF300D473AE /* A.mp3 */; };
 		3D76C32A23243CFE009629CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D76C32923243CFE009629CB /* AppDelegate.swift */; };
 		3D76C32C23243CFE009629CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D76C32B23243CFE009629CB /* ViewController.swift */; };
 		3D76C32F23243CFE009629CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D76C32D23243CFE009629CB /* Main.storyboard */; };
 		3D76C33123243CFE009629CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D76C33023243CFE009629CB /* Assets.xcassets */; };
 		3D76C33423243CFE009629CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D76C33223243CFE009629CB /* LaunchScreen.storyboard */; };
-		3DE7148A2330B1E900E9E777 /* nice.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE714892330B1E900E9E777 /* nice.png */; };
 		3DE7148E2330B3CB00E9E777 /* A#:Bb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DE7148D2330B3CB00E9E777 /* A#:Bb.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -93,7 +93,6 @@
 		3D4586AB232446E800555DD4 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		3D4586AD232446F500555DD4 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		3D4586AF2324470000555DD4 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
-		3D4586B12324479400555DD4 /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = SOURCE_ROOT; };
 		3D4586F22324541A00555DD4 /* F maj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "F maj.mp3"; sourceTree = "<group>"; };
 		3D4586F32324541A00555DD4 /* A#:Bb maj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "A#:Bb maj.mp3"; sourceTree = "<group>"; };
 		3D4586F42324541A00555DD4 /* C#:Db min.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C#:Db min.mp3"; sourceTree = "<group>"; };
@@ -162,6 +161,8 @@
 		3D4587662324613600555DD4 /* C maj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C maj.mp3"; sourceTree = "<group>"; };
 		3D4587802325B4BF00555DD4 /* none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = none.png; sourceTree = "<group>"; };
 		3D4587822325C05300555DD4 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		3D48366A2734CDDD00EAA2F4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		3D48366C2734CDE700EAA2F4 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		3D5E6FCA2649ECF300D473AE /* A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = A.mp3; path = ../../../../../../Documents/Notes/A.mp3; sourceTree = "<group>"; };
 		3D76C32623243CFE009629CB /* Note Float.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Note Float.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D76C32923243CFE009629CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,7 +171,6 @@
 		3D76C33023243CFE009629CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D76C33323243CFE009629CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D76C33523243CFE009629CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DE714892330B1E900E9E777 /* nice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nice.png; sourceTree = SOURCE_ROOT; };
 		3DE7148D2330B3CB00E9E777 /* A#:Bb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A#:Bb.mp3"; path = "../../../../../../Documents/Notes/A#:Bb.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -311,8 +311,8 @@
 				3D76C33223243CFE009629CB /* LaunchScreen.storyboard */,
 				3D4587822325C05300555DD4 /* icon1.png */,
 				3D76C33523243CFE009629CB /* Info.plist */,
-				3DE714892330B1E900E9E777 /* nice.png */,
-				3D4586B12324479400555DD4 /* pic.png */,
+				3D48366C2734CDE700EAA2F4 /* button.png */,
+				3D48366A2734CDDD00EAA2F4 /* icon.png */,
 				3D45870E2324544600555DD4 /* Notes */,
 				3D45870D2324543700555DD4 /* Note Images */,
 				3D45870C2324543100555DD4 /* Intervals */,
@@ -384,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D48366D2734CDE700EAA2F4 /* button.png in Resources */,
 				3D458745232454CE00555DD4 /* perf 8th.png in Resources */,
 				3D45876C2324614D00555DD4 /* G maj.mp3 in Resources */,
 				3D4587162324546400555DD4 /* C.mp3 in Resources */,
@@ -396,6 +397,7 @@
 				3D45877C2324614D00555DD4 /* C maj2.mp3 in Resources */,
 				3D458762232454E400555DD4 /* min 7th.mp3 in Resources */,
 				3D458748232454CE00555DD4 /* min 2nd.png in Resources */,
+				3D48366B2734CDDD00EAA2F4 /* icon.png in Resources */,
 				3D4587702324614D00555DD4 /* E maj.mp3 in Resources */,
 				3D45873B232454CE00555DD4 /* aug 5th.png in Resources */,
 				3D458741232454CE00555DD4 /* perf 4th.png in Resources */,
@@ -435,7 +437,6 @@
 				3D5E6FCB2649ECF400D473AE /* A.mp3 in Resources */,
 				3D4587232324547E00555DD4 /* G.mp3 in Resources */,
 				3D4587752324614D00555DD4 /* F#:Gb min.mp3 in Resources */,
-				3DE7148A2330B1E900E9E777 /* nice.png in Resources */,
 				3D4587812325B4BF00555DD4 /* none.png in Resources */,
 				3D458757232454E400555DD4 /* maj 2nd.mp3 in Resources */,
 				3D458765232460C900555DD4 /* F maj.mp3 in Resources */,
@@ -454,7 +455,6 @@
 				3D45873E232454CE00555DD4 /* maj 6th.png in Resources */,
 				3D45875A232454E400555DD4 /* maj 3rd.mp3 in Resources */,
 				3D4587242324547E00555DD4 /* F#:Gb.mp3 in Resources */,
-				3D4586B22324479400555DD4 /* pic.png in Resources */,
 				3D458761232454E400555DD4 /* min 6th.mp3 in Resources */,
 				3D45877D2324614D00555DD4 /* D#:Eb min.mp3 in Resources */,
 				3D76C32F23243CFE009629CB /* Main.storyboard in Resources */,

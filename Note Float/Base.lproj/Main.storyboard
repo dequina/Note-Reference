@@ -65,7 +65,7 @@
                                 <color key="textColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="pic.png" translatesAutoresizingMaskIntoConstraints="NO" id="5gD-ih-ZGU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="5gD-ih-ZGU">
                                 <rect key="frame" x="124.5" y="215.5" width="165" height="164.5"/>
                             </imageView>
                         </subviews>
@@ -286,12 +286,12 @@
                                 <rect key="frame" x="47" y="192" width="320" height="216"/>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YTz-W7-deN">
-                                <rect key="frame" x="119.5" y="650" width="175" height="32"/>
+                                <rect key="frame" x="93" y="650" width="228" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKE-ht-uif">
-                                        <rect key="frame" x="0.0" y="0.0" width="36" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="34"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                        <state key="normal" title="Play">
+                                        <state key="normal" title="Play" backgroundImage="note-button">
                                             <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
@@ -299,9 +299,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAO-HI-4NO">
-                                        <rect key="frame" x="136" y="0.0" width="39" height="32"/>
+                                        <rect key="frame" x="164" y="0.0" width="64" height="34"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                        <state key="normal" title="Stop">
+                                        <state key="normal" title="Stop" backgroundImage="note-button">
                                             <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
@@ -397,16 +397,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2E-Cj-ddz">
-                                <rect key="frame" x="176.5" y="173" width="61" height="32"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <state key="normal" title="Play All">
-                                    <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="Kxk-1Q-lJN"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="reI-j1-H3m">
                                 <rect key="frame" x="42" y="243" width="64" height="226"/>
                                 <subviews>
@@ -543,9 +533,9 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-DP-Xdh">
-                                <rect key="frame" x="187.5" y="514" width="39" height="32"/>
+                                <rect key="frame" x="65" y="514" width="284" height="69"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <state key="normal" title="Stop">
+                                <state key="normal" title="Stop" backgroundImage="button">
                                     <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -553,7 +543,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1jo-G0-c5S">
-                                <rect key="frame" x="157.5" y="576" width="99" height="29"/>
+                                <rect key="frame" x="158" y="613" width="98" height="29"/>
                                 <segments>
                                     <segment title="Major"/>
                                     <segment title="Minor"/>
@@ -575,26 +565,40 @@
                                     <action selector="scaleDirectionWith_sender:" destination="Itg-lB-Etm" eventType="valueChanged" id="izC-ZC-fcR"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2E-Cj-ddz">
+                                <rect key="frame" x="123" y="173" width="167" height="54"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Play All" backgroundImage="button">
+                                    <color key="titleColor" red="0.64961139899999998" green="0.23329497439999999" blue="0.4041737755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonSoundWith_sender:" destination="Itg-lB-Etm" eventType="touchDown" id="Kxk-1Q-lJN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="x8g-oO-bjm" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="120" id="3fi-Kv-AdZ"/>
-                            <constraint firstItem="g6U-FG-F8F" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="10" id="CXP-PH-l3F"/>
-                            <constraint firstItem="xW3-DP-Xdh" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="DaR-1O-6FC"/>
-                            <constraint firstItem="g6U-FG-F8F" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="Ffu-OO-sqY"/>
-                            <constraint firstItem="1jo-G0-c5S" firstAttribute="top" secondItem="xW3-DP-Xdh" secondAttribute="bottom" constant="30" id="ISI-1i-5yi"/>
-                            <constraint firstItem="2gs-5r-oiR" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="Jn3-ui-8Us"/>
-                            <constraint firstItem="eca-l7-MMh" firstAttribute="top" secondItem="eC9-6v-bHo" secondAttribute="top" constant="35" id="OV5-6D-PK5"/>
-                            <constraint firstItem="y2E-Cj-ddz" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="PwD-CY-FBA"/>
-                            <constraint firstItem="xW3-DP-Xdh" firstAttribute="top" secondItem="2gs-5r-oiR" secondAttribute="bottom" constant="45" id="c5B-xv-iwc"/>
-                            <constraint firstItem="2gs-5r-oiR" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="120" id="eHG-ov-QEm"/>
-                            <constraint firstItem="x8g-oO-bjm" firstAttribute="leading" secondItem="2gs-5r-oiR" secondAttribute="trailing" constant="69" id="gYA-1g-oqV"/>
-                            <constraint firstItem="eca-l7-MMh" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="ion-nN-iT6"/>
-                            <constraint firstItem="eca-l7-MMh" firstAttribute="leading" secondItem="fJ6-mx-47z" secondAttribute="leading" id="jvG-ZF-bZM"/>
-                            <constraint firstItem="1jo-G0-c5S" firstAttribute="centerX" secondItem="fJ6-mx-47z" secondAttribute="centerX" id="oj1-zl-0wt"/>
-                            <constraint firstItem="2gs-5r-oiR" firstAttribute="leading" secondItem="reI-j1-H3m" secondAttribute="trailing" constant="69" id="pwW-iY-fsl"/>
-                            <constraint firstItem="y2E-Cj-ddz" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="50" id="s41-Jk-MyI"/>
-                            <constraint firstItem="reI-j1-H3m" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="120" id="wjA-Co-zqH"/>
+                            <constraint firstItem="eca-l7-MMh" firstAttribute="leading" secondItem="fJ6-mx-47z" secondAttribute="leading" id="1Av-RJ-4jD"/>
+                            <constraint firstItem="g6U-FG-F8F" firstAttribute="centerX" secondItem="y2E-Cj-ddz" secondAttribute="centerX" id="EBM-Xd-eBU"/>
+                            <constraint firstItem="1jo-G0-c5S" firstAttribute="top" secondItem="xW3-DP-Xdh" secondAttribute="bottom" constant="30" id="Er3-6K-9XO"/>
+                            <constraint firstItem="g6U-FG-F8F" firstAttribute="top" secondItem="eca-l7-MMh" secondAttribute="bottom" constant="10" id="Key-9P-kIV"/>
+                            <constraint firstItem="2gs-5r-oiR" firstAttribute="centerX" secondItem="xW3-DP-Xdh" secondAttribute="centerX" id="PPj-P4-Zns"/>
+                            <constraint firstItem="1jo-G0-c5S" firstAttribute="leading" secondItem="eC9-6v-bHo" secondAttribute="leading" constant="158" id="UZs-8n-J2h"/>
+                            <constraint firstItem="xW3-DP-Xdh" firstAttribute="top" secondItem="reI-j1-H3m" secondAttribute="bottom" constant="45" id="VUo-4c-czT"/>
+                            <constraint firstItem="x8g-oO-bjm" firstAttribute="leading" secondItem="2gs-5r-oiR" secondAttribute="trailing" constant="69" id="WCm-gt-ClR"/>
+                            <constraint firstItem="y2E-Cj-ddz" firstAttribute="top" secondItem="g6U-FG-F8F" secondAttribute="bottom" constant="12" id="XPX-Qy-utT"/>
+                            <constraint firstItem="y2E-Cj-ddz" firstAttribute="centerX" secondItem="2gs-5r-oiR" secondAttribute="centerX" id="Yea-wN-mXd"/>
+                            <constraint firstItem="y2E-Cj-ddz" firstAttribute="leading" secondItem="eC9-6v-bHo" secondAttribute="leading" constant="123" id="Znq-KK-9nb"/>
+                            <constraint firstAttribute="trailing" secondItem="eca-l7-MMh" secondAttribute="trailing" id="cZC-s0-Dz5"/>
+                            <constraint firstItem="eca-l7-MMh" firstAttribute="top" secondItem="eC9-6v-bHo" secondAttribute="top" constant="35" id="hbh-zS-Bcv"/>
+                            <constraint firstItem="2gs-5r-oiR" firstAttribute="top" secondItem="x8g-oO-bjm" secondAttribute="top" id="iq7-fz-GUD"/>
+                            <constraint firstItem="xW3-DP-Xdh" firstAttribute="leading" secondItem="eC9-6v-bHo" secondAttribute="leading" constant="65" id="lGm-r9-JAD"/>
+                            <constraint firstItem="2gs-5r-oiR" firstAttribute="top" secondItem="y2E-Cj-ddz" secondAttribute="bottom" constant="16" id="oS9-0f-A3i"/>
+                            <constraint firstItem="reI-j1-H3m" firstAttribute="leading" secondItem="eC9-6v-bHo" secondAttribute="leading" constant="42" id="paW-Xc-O80"/>
+                            <constraint firstItem="reI-j1-H3m" firstAttribute="top" secondItem="g6U-FG-F8F" secondAttribute="bottom" constant="82" id="rdR-ig-k34"/>
+                            <constraint firstItem="xW3-DP-Xdh" firstAttribute="centerX" secondItem="1jo-G0-c5S" secondAttribute="centerX" id="uDI-mx-luh"/>
+                            <constraint firstItem="reI-j1-H3m" firstAttribute="top" secondItem="2gs-5r-oiR" secondAttribute="top" id="uz9-tN-SXH"/>
+                            <constraint firstItem="eca-l7-MMh" firstAttribute="centerX" secondItem="g6U-FG-F8F" secondAttribute="centerX" id="z1l-oh-6kk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eC9-6v-bHo"/>
                     </view>
@@ -610,8 +614,8 @@
     </scenes>
     <resources>
         <image name="button" width="285" height="69"/>
+        <image name="icon.png" width="164.57142639160156" height="164.57142639160156"/>
         <image name="note-button" width="64" height="34"/>
-        <image name="pic.png" width="164.57142639160156" height="164.57142639160156"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sUE-cn-JDm"/>
